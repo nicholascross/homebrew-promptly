@@ -1,14 +1,13 @@
 class Promptly < Formula
   desc "A command-line tool for working with prompts"
   homepage "https://github.com/nicholascross/Promptly"
-  url "https://github.com/nicholascross/Promptly/archive/refs/tags/2.1.5.tar.gz"
-  sha256 "67158be5be446495ca5e31434cf742519897c8dd739d3e1b2c91af838f693568"
-  version "2.1.5"
+  url "https://github.com/nicholascross/Promptly/archive/refs/tags/2.1.6.tar.gz"
+  sha256 "025e7c2eef010046b3be9f7b99ca15700f7f10ad5eb62f8696ce5651677ed1af"
+  version "2.1.6"
   depends_on "swift" => :build
 
   def install
-    ENV["SWIFTPM_DISABLE_SANDBOX"] = "1"
-    system "swift", "build", "-c", "release"
+    system "swift", "build", "-c", "release", "--disable-sandbox"
     bin.install ".build/release/promptly"
   end
 
