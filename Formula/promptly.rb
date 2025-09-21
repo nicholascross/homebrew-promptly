@@ -1,9 +1,9 @@
 class Promptly < Formula
   desc "A command-line tool for working with prompts"
   homepage "https://github.com/nicholascross/Promptly"
-  url "https://github.com/nicholascross/Promptly/archive/refs/tags/7.1.5.tar.gz"
-  sha256 "7132d3f66c2ca7783023f72166c1b1eefc0a3121eeb8daab0807debbde538b3c"
-  version "7.1.5"
+  url "https://github.com/nicholascross/Promptly/archive/refs/tags/7.1.6.tar.gz"
+  sha256 "d830e90903c67f42b29d45e2d7c3a79233a44769070e24b472d65638491535d0"
+  version "7.1.6"
   depends_on "swift" => :build
 
   def install
